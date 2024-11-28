@@ -120,7 +120,7 @@ nav ul li a:hover {
   padding: 20% 0;
   background: rgba(255, 255, 255);
   transition: all 0.5s ease-in;
-  z-index: 2;
+  z-index: 200000;
 }
 .active {
   left: 0;
@@ -474,12 +474,63 @@ footer a {
   .experience-card {
     width: calc(50% - 20px); /* 2 exp por fila */
   }
+
+  /* footer */
+  .com, .info {
+    margin: 20px 0;
+    text-align: center; 
+  }
+
+  .info .sociallogos {
+    flex-wrap: wrap; 
+    gap: 10px;
+  }
+
+  .info .sociallogos .logobox a {
+    font-size: 18px; 
+  }
+  .main-footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .logoinfo{
+    margin-left: 20px;
+  }
+  .com{
+    display: none;
+  }
+  .contact-details{
+    margin-left: 70px;
+  }
 }
 
 
 @media (max-width: 480px) {
+  /* experiences */
   .experience-card {
     width: 100%; /* 1 tarjeta por fila*/
+  }
+
+  /* footer */
+  .com h1, .info h1 {
+    font-size: 18px; 
+  }
+
+  .com ul li a {
+    font-size: 14px;
+  }
+
+  .info .sociallogos .logobox a {
+    font-size: 16px; 
+  }
+
+  .main-footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .com{
+    display: none;
   }
 }
 
