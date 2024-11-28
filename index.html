@@ -6,9 +6,10 @@
   <link href="styles.css" rel="stylesheet">
   <link rel="icon" href="img/mountain.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/bf8631ba4b.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Planazo</title>
 </head>
 <body>
+  <!-- Top banner -->
   <div class="banner-container">
     <div class="moving-banner">
       <span>3 cuotas sin interés | 10% de descuento pagando con transferencia</span>
@@ -16,19 +17,26 @@
       <span>3 cuotas sin interés | 10% de descuento pagando con transferencia</span>
     </div>
   </div>
+  <!-- Navbar -->
   <nav>
     <div class="logo">
-      <img src="img/logo.png" alt="logo"/>
+      <img src="img/planazo.png" alt="logo"/>
     </div>
     <ul>
       <li>
-        <a href="#">Todos los productos</a>
+        <a href="#">Experiencias</a>
       </li>
       <li>
         <a href="#">Quiénes somos</a>
       </li>
       <li>
-        <a href="#">Dónde estamos</a>
+        <a href="ubi.html">Dónde estamos</a>
+      </li>
+      <li>
+        <a href="#">Contactanos</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
       </li>
     </ul>
     <div class="hamburger">
@@ -40,20 +48,239 @@
   <div class="menubar">
     <ul>
       <li>
-        <a href="#">Home</a>
+        <a href="#">Experiencias</a>
       </li>
       <li>
-        <a href="#">Services</a>
+        <a href="#">Quiénes Somos</a>
       </li>
       <li>
-        <a href="#">Blog</a>
+        <a href="#">Dónde estamos</a>
       </li>
       <li>
         <a href="#">Contact Us</a>
       </li>
+      <li>
+        <a href="#">Contactanos</a>
+      </li>
     </ul>
   </div>
-
+  <div class="carousel">
+    <ul class="slides">
+      <!-- Slide 1 -->
+      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+          <div class="hero-text">
+            <h1>Discover Timisoara</h1>
+            <p>A beautiful blend of history and modernity.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="img-3" class="prev-slide">&lsaquo;</label>
+          <label for="img-2" class="next-slide">&rsaquo;</label>
+        </div>
+      </li>
+  
+      <!-- Slide 2 -->
+      <input type="radio" name="radio-buttons" id="img-2" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+          <div class="hero-text">
+            <h1>Explore New Horizons</h1>
+            <p>Adventure awaits at every corner.</p>
+            <button>Join Now</button>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="img-1" class="prev-slide">&lsaquo;</label>
+          <label for="img-3" class="next-slide">&rsaquo;</label>
+        </div>
+      </li>
+  
+      <!-- Slide 3 -->
+      <input type="radio" name="radio-buttons" id="img-3" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+          <div class="hero-text">
+            <h1>Your Next Destination</h1>
+            <p>Let us take you on a journey to remember.</p>
+            <button>Get Started</button>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="img-2" class="prev-slide">&lsaquo;</label>
+          <label for="img-1" class="next-slide">&rsaquo;</label>
+        </div>
+      </li>
+  
+      <!-- Puntos navegación -->
+      <div class="carousel-dots">
+        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+      </div>
+    </ul>
+  </div>
+  <!-- Experiencias -->
+  <div class="experience-grid">
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Gourmet Dinner</h3>
+        <p>📍 Buenos Aires</p>
+        <p>👤 2 personas</p>
+        <p class="price">$15,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Spa Day</h3>
+        <p>📍 Mendoza</p>
+        <p>👤 1 persona</p>
+        <p class="price">$12,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+    <div class="experience-card">
+      <img src="https://via.placeholder.com/300x200" alt="Experience Image">
+      <div class="experience-info">
+        <h3>Wine Tasting</h3>
+        <p>📍 Córdoba</p>
+        <p>👤 4 personas</p>
+        <p class="price">$20,000</p>
+      </div>
+    </div>
+  </div>
+  <section id="footer">
+    <div class="main-footer">
+      <!-- Información de contacto -->
+      <div class="logoinfo" data-aos="fade-up">
+        <div class="contact-details">
+          <img src="img/planazo_white.png" alt="logo"/>
+          <li>
+            <div class="fa fa-phone"></div>
+            <a href="tel:+5491123456789">+54 9 11 2345-6789</a>
+          </li>
+          <li>
+            <div class="fa fa-envelope"></div>
+            <a href="mailto:contacto@tudominio.com">contacto@planazo.com</a>
+          </li>
+        </div>
+      </div>
+  
+      <!-- Enlaces sobre nosotros -->
+      <div class="com" data-aos="fade-up">
+        <h1>Quienes Somos</h1>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Experiencias</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Contáctanos</a></li>
+        </ul>
+      </div>
+  
+      <!-- Redes sociales -->
+      <div class="info" data-aos="fade-up">
+        <h1>Redes Sociales</h1>
+        <div class="sociallogos">
+          <div class="logobox">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube-play"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Pie de página -->
+    <footer>© 2024 Todos los derechos reservados</footer>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>

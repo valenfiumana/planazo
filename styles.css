@@ -148,21 +148,347 @@ nav ul li a:hover {
   background-color: #f5f5f5;
 }
 
+/* - - - - - - - CAROUSEL - - - - - - - - - */
+.carousel {
+  width: 100%;
+  height: 70vh; 
+  position: relative;
+  overflow: hidden;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+}
+
+ul.slides input {
+  display: none;
+}
+
+.slide-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto del Hero*/
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: left;
+  z-index: 10;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #0056b3;
+}
+
+input:checked + .slide-container {
+  opacity: 1;
+}
+
+/* Flechas */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.carousel-controls label {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s;
+}
+
+.carousel-controls label:hover {
+  opacity: 0.7;
+}
+
+/* Navigation Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel-dots .carousel-dot {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.carousel-dots .carousel-dot:hover,
+input:checked ~ .carousel-dots label {
+  opacity: 1;
+}
+
+/* EXPERIENCE GRID */
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 20px); /* 3 cards per row */
+  max-width: 300px;
+  min-width: 250px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+}
+
+.experience-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.experience-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.experience-info h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.experience-info p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.experience-info .price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff5733;
+  font-size: 1.1rem;
+}
+
+/* - - - - - - - FOOTER - - - - - - - - - */
+/* Footer principal */
+.main-footer {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #111;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.main-footer ul li a:hover {
+  color: #6EB981;
+}
+
+footer {
+  background-color: #111;
+  border-top: 1px solid #444;
+  font-size: 16px;
+  padding: 15px;
+  color: #ccc;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #6EB981;
+}
+
+.logoinfo p {
+  color: #6EB981;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details img {
+  max-width: 150px; 
+  height: auto; 
+  object-fit: contain;
+  margin-bottom: 20px; 
+  display: block; 
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #6EB981;
+  margin-right: 10px;
+}
+
+.sociallogos {
+  padding: 20px 0;
+}
+
+.sociallogos .logobox a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+.sociallogos .logobox a:hover {
+  color: #6EB981;
+}
+
+.com ul li {
+  padding: 5px 0;
+}
+
 
 @media screen and (max-width: 790px) {
+  /* hamburger menu */
   .hamburger {
     display: block;
   }
   nav ul {
     display: none;
   }
+  /* slideshow*/
+  .hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+  }
+  
+  .hero-text button {
+    font-size: 0.8rem;
+  }
+
+  /* experiences */
+  .experience-card {
+    width: calc(50% - 20px); /* 2 exp por fila */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .experience-card {
+    width: 100%; /* 1 tarjeta por fila*/
+  }
 }
 
 @keyframes moveLeft {
+  /* top banner */
   0% {
-      transform: translateX(100%); /* Starts off-screen to the right */
+      transform: translateX(100%); /* Empieza fuera pantalla a la derecha */
   }
   100% {
-      transform: translateX(-100%); /* Moves completely off-screen to the left */
+      transform: translateX(-100%); /* Se va de la pantalla en la izquierda */
   }
 }
